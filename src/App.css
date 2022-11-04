@@ -4,70 +4,9 @@
 }
 .App {
     width: 100%;
-    height: 100vh;
+    height: calc(100vh - 100px);
     display:flex;
     justify-content: center;
     align-items: center;
     background-color: #8D8D8D;
-}
-
-#drum-machine {
-    width: 600px;
-    height: 300px;
-    border: 5px solid orange;
-    display:flex;
-    justify-content: space-between;
-    padding: 30px;
-    background-color: #B3B3B3;
-}
-
-#drum-pads {
-    width: 60%;
-    display:grid;
-    grid-template-columns: repeat(3, 100px);
-    gap: 10px;
-}
-
-.drum-pad {
-    display:flex;
-    justify-content: center;
-    align-items: center;
-    border:0px solid black;
-    box-shadow: 5px 5px 5px black;
-    border-radius: 5px;
-    background-color: #808080;
-    font-weight: bold;
-}
-
-.drum-pad:hover {
-    cursor: pointer;
-}
-
-.drum-pad:active {
-    background-color: orange;
-    box-shadow: none;
-}
-
-#controls {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#display {
-    width: 200px;
-    height:50px;
-    background-color: #808080;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.power, .bank {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size:20px;
 }

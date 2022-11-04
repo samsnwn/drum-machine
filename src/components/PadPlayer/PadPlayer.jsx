@@ -1,8 +1,9 @@
-import "./App.css";
-import { bankOne, bankTwo } from "./api";
+import "./padPlayer.css";
+import { bankOne, bankTwo } from "../../api";
 import { useState } from "react";
+import Container from "../UI/Container";
 
-function App() {
+function PadPlayer() {
   const [bank, setBank] = useState(true);
   const [power, setPower] = useState(false);
   const [display, setDisplay] = useState();
@@ -65,8 +66,9 @@ function App() {
 
 
   return (
-    <div className="App" onClick={(e) => playHandler(e)} onKeyDown={(e) => playHandler(e)} tabIndex={-1}>
-      <div id="drum-machine">
+    <div onClick={(e) => playHandler(e)} onKeyDown={(e) => playHandler(e)} tabIndex={-1}>
+      <Container>
+        <div className='pad-player'>
         <div id="drum-pads">
           {bank
             ? bankOne.map((el, i) => (
@@ -111,9 +113,10 @@ function App() {
             ></input>
           </div>
         </div>
-      </div>
+        </div>
+      </Container>
     </div>
   )
 }
 
-export default App;
+export default PadPlayer;

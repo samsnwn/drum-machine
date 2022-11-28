@@ -1,12 +1,14 @@
+import styles from './Sequencer.module.css'
 import React from "react";
 import Container from "../UI/Container";
+import EditorRow from './EditorRow';
 
 export default function Sequencer() {
   return (
     <div>
       <Container>
-        <div className="sequencer">
-          <div className="transport">
+        <div className={styles.sequencer}>
+          <div className={styles.transport}>
             <div>REACT-SEQUENCER</div>
             <div>
               <button>STOP</button>
@@ -14,9 +16,11 @@ export default function Sequencer() {
             </div>
           </div>
           <hr />
-          <div className="steps">Step Numbers</div>
+          <div className={styles.steps}>Step Numbers</div>
           <hr />
-          <div className="editor"> Editor</div>
+          <div className={styles.editor}>
+            <EditorRow/>
+          </div>
         </div>
       </Container>
     </div>

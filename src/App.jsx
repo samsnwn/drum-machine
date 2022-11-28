@@ -9,7 +9,7 @@ import Sequencer from "./components/Sequencer/Sequencer";
 function App() {
   return (
     <>
-      <NavBar />
+      {/* <NavBar /> */}
       <main className="App">
         <Routes>
           <Route path="/" element={<Home />} />

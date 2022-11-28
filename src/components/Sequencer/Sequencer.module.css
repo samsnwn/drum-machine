@@ -4,7 +4,19 @@
     display:flex;
     flex-direction: column;
 }
+
+/* TRANSPORT SECTION */
 .transport {
     display: flex;
     justify-content:space-between;
+}
+
+
+/* EDITOR SECTION */
+.editorRow {
+    display: flex;
+    justify-content:space-between;
+}
+.rowSteps {
+    display: flex;
 }
